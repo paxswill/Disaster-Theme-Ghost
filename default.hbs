@@ -27,11 +27,6 @@
                     {{@site.title}}
                 {{/if}}
             </a>
-            <a class="gh-burger" role="button">
-                <div class="gh-burger-box">
-                    <div class="gh-burger-inner"></div>
-                </div>
-            </a>
         </div>
         <div class="gh-head-menu">
             {{navigation}}
@@ -80,15 +75,6 @@
 </script>
 <script src="{{asset "built/infinitescroll.js"}}"></script>
 {{/if}}
-
-<script>
-$(document).ready(function () {
-    // Mobile Menu Trigger
-    $('.gh-burger').click(function () {
-        $('body').toggleClass('gh-head-open');
-    });
-});
-</script>
 
 {{#is "post, page"}}
 <script src="{{asset "built/jquery.fitvids.js"}}"></script>
