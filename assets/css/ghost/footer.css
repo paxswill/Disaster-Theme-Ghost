@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     padding: 8vmin 4vmin;
+    grid-area: footer;
 }
 
 .gh-foot .gh-container {
