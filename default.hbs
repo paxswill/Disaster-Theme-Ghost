@@ -39,6 +39,8 @@
                 {{#if @site.twitter}}
                 <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
                 {{/if}}
+                {{!-- TODO: Parameterize this --}}
+                <a href="https://github.com/paxswill" title="GitHub" target="_blank" rel="noopener">{{> "icons/github"}}</a>
                 <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
             </div>
         </div>
