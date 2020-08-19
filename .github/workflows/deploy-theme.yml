@@ -8,6 +8,24 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Cache node dependencies
+        uses: actions/cache@2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-node-${{ hashFiles('yarn.lock') }}
+
+      - name: Install Yarn dependencies
+        run: yarn install
+
+      - name: Build and run tests
+        run: yarn test
+
       - name: Deploy Ghost Theme
         uses: TryGhost/action-deploy-theme@v1.4.0
         with:
