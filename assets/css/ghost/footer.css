@@ -7,6 +7,9 @@
     justify-content: center;
     padding: 8vmin 4vmin;
     grid-area: footer;
+    /* Invert the colors for the footer */
+    background-color: var(--color-primary);
+    color: var(--color-bg);
 }
 
 .gh-foot .gh-container {
