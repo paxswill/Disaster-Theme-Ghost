@@ -20,11 +20,11 @@
     ;
 }
 
-@media (max-width: 1296px) {
+@media (max-width: 1024px) {
     .gh-canvas {
         grid-template-columns:
             [full-start]
-            4vmin
+            auto
                 [wide-start]
                     auto
                         [main-start]
@@ -38,7 +38,7 @@
     }
 }
 
-@media (max-width: 778px) {
+@media (max-width: 768px) {
     .gh-canvas {
         grid-template-columns:
             [full-start]
@@ -71,7 +71,6 @@
 .kg-width-full img {
     width: 100%;
 }
-
 
 /* Content & Typography
 /* ---------------------------------------------------------- */
