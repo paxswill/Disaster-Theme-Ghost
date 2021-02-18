@@ -213,6 +213,13 @@ html,
     margin: 2rem 0;
 }
 
+/* Footnotes
+/* ---------------------------------------------------------- */
+
+.gh-content ol.footnotes-list {
+    list-style: decimal;
+};
+
 
 /* Author Archive
 /* ---------------------------------------------------------- */
